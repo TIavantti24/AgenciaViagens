@@ -115,6 +115,18 @@
             );
         });
     </script>
+	 <style>
+	        .whatsapp-button {
+	            position: fixed;
+	            bottom: 50px; /* Distância aumentada do fundo */
+	            right: 15px; /* Distância da direita */
+	            z-index: 1000; /* Para garantir que fique sobre outros elementos */
+	        }
+	        .whatsapp-button img {
+	            width: 60px; /* Ajuste o tamanho do ícone */
+	            height: auto; /* Mantém a proporção */
+	        }
+	</style>
 </head>
   <body data-path-to-root="/" data-include-products="false" class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-sticky u-header" id="sec-be42"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <a href="#" class="u-image u-logo u-image-1">
@@ -418,7 +430,9 @@ borders: top right bottom left !important; border-color: #404040 !important; bor
       </div>
     </section>
     
-    
+        <a href="https://api.whatsapp.com/send?phone=558230248079" target="_blank" class="whatsapp-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
     
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-754b"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
