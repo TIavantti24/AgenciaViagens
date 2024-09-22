@@ -37,16 +37,7 @@
     function gdprConfirmed() {
         return true;
     }
-    function dynamicLoadScript(src) {
-        var script = document.createElement('script');
-        script.src = src && typeof src === 'string' ? src : 'https://www.google.com/recaptcha/api.js?render=6LetPRgiAAAAAGX121nVdkYGTN-RfCXh4wAlbDFh';
-        script.async = true;
-        document.body.appendChild(script);
-        script.onload = function() {
-            let event = new CustomEvent("recaptchaLoaded");
-            document.dispatchEvent(event);
-        };
-    }
+
     document.addEventListener('DOMContentLoaded', function () {
         var confirmButton = document.querySelector('.u-cookies-consent .u-button-confirm');
         if (confirmButton) {
